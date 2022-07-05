@@ -1,3 +1,104 @@
+Getting Started
+- [ ] Quick Start Guide 快速使用指南
+- [ ] release_notes 发布笔记
+- [ ] Support Matrix 支持矩阵
+- [x] Installation Guide 安装指南
+
+Inference Library 
+- [x] API Reference 推理接口
+- [x] Developer Guide 开发者指南
+- [x] Sample Support Guide 样例支持指南
+
+Optimized Frameworks
+- [ ] Container Release Notes 
+
+Tools
+- [ ] ONNX GraphSurgeon API Reference
+- [ ] Polygraphy API Reference
+- [ ] PyTorch-Quantization Toolkit User Guide
+- [ ] TensorFlow Quantization Toolkit User Guide
+
+Licenses
+- [ ] LICENSE AGREEMENT FOR NVIDIA SOFTWARE DEVELOPMENT KITS
+
+Archives
+- [ ] Documentation Archives
+
+
+
+<style>
+    .nv_color{
+        color:#78B721;
+    }
+</style>
+
+
+<h1 class="nv_color">  NVIDIA TensorRT </h1>
+<h2 class="nv_color"> 快速入门指南 </h2>
+
+本NVIDIA TensorRT 8.4.1快速入门指南是希望试用TensorRT SDK的开发人员的起点；具体来说，本文演示了如何快速构建应用程序以在TensorRT引擎上运行推理。
+
+<h2 class="nv_color"> 发行说明 </h2>
+
+
+NVIDIA TensorRT是一个C++库，有助于在NVIDIA GPU上进行高性能推理。它旨在与通常用于培训的深度学习框架结合使用。TensorRT专注于在GPU上快速高效地运行已经训练过的网络，以产生结果；也称为推断。这些发行说明描述了TensorRT 8.4.1产品包的主要功能、软件增强和改进以及已知问题。
+
+<h2 class="nv_color"> 支持矩阵 </h2>
+这些支持列表提供了NVIDIA TensorRT 8.4.1 API、解析器和层支持的平台、功能和硬件功能。
+
+<h2 class="nv_color"> 安装指南 </h2>
+本NVIDIA TensorRT 8.4.1安装指南提供了安装要求、TensorRT软件包中包含的内容列表以及安装TensorRT的分步说明。
+
+<h1 class="nv_color"> 推理库 </h1>
+
+---
+<h2 class="nv_color"> API参考 </h2>
+这是NVIDIA TensorRT库的API参考文档。以下API集允许开发人员导入预先训练的模型，校准INT8的网络，并使用TensorRT构建和部署优化的网络。可以从ONNX导入网络。它们也可以使用C++或Python API通过实例化各个层并直接设置参数和权重来编程创建。
+
+<h2 class="nv_color"> 开发者指南 </h2>
+本NVIDIA TensorRT开发者指南演示了如何使用C++和Python API实现最常见的深度学习层。它展示了如何使用深度学习框架构建的现有模型，并使用提供的解析器构建TensorRT引擎。《开发人员指南》还为常见用户任务提供了分步说明，例如创建TensorRT网络定义、调用TensorRT生成器、序列化和反序列化，以及如何向引擎提供数据和执行推理；同时使用C++或Python API。
+
+<h2 class="nv_color"> 示例支持指南 </h2>
+本示例支持指南概述了GitHub和产品包中包含的所有受支持的NVIDIA TensorRT 8.4.1示例。TensorRT样本特别有助于推荐、机器理解、字符识别、图像分类和目标检测等领域。
+
+<h1 class="nv_color"> 优化的框架 </h1>
+
+---
+<h2 class="nv_color"> 容器发布说明 </h2>
+TensorRT容器是用于TensorRT开发的易于使用的容器。该容器允许构建、修改和执行TensorRT样本。这些发行说明提供了22.06及更早版本的关键功能、容器中包含的打包软件、软件增强和改进以及已知问题的列表。TensorRT容器每月发布一次，为您提供最新的NVIDIA深度学习软件库和发送到上游的GitHub代码贡献。这些库和贡献都经过了测试、调优和优化。
+
+<h1 class="nv_color"> 工具 </h1>
+
+---
+<h2 class="nv_color"> ONNX GraphSurgeon API参考 </h2>
+ONNX GraphSurgeon提供了一种创建和修改ONNX模型的方便方法。
+
+<h2 class="nv_color"> Polygraphy API参考 </h2>
+Polygraphy是一个工具包，旨在帮助在各种框架中运行和调试深度学习模型。
+
+<h2 class="nv_color"> PyTorch量化工具包用户指南 </h2>
+Pytork Quantization是一个工具包，用于通过模拟量化训练和评估Pytork模型。量化可以自动或手动添加到模型中，允许调整模型的准确性和性能。量化模型可以导出到ONNX并导入到即将发布的TensorRT版本中。
+
+
+<h2 class="nv_color"> TensorFlow量化工具包用户指南 </h2>
+NVIDIA TensorFlow量化工具包提供了一个简单的API来量化给定的Keras模型。最初，在目标数据集上训练网络，直到完全收敛。量化步骤包括在预训练网络中插入Q/DQ节点，以模拟训练期间的量化。然后对网络进行几次重新训练，以在称为微调的步骤中恢复精度。
+
+<h1 class="nv_color"> 许可证 </h1>
+
+---
+<h2 class="nv_color"> NVIDIA软件开发工具包许可协议 </h2>
+
+本文件是针对NVIDIA TensorRT的NVIDIA软件开发工具包的许可协议。本文档包含NVIDIA TensorRT的特定许可条款和条件。接受本协议即表示您同意遵守适用于本协议所含特定产品的所有条款和条件。
+<h1 class="nv_color"> 档案 </h1>
+
+---
+<h2 class="nv_color"> 文件归档 </h2>
+本归档文件提供了对先前发布的NVIDIA TensorRT文档版本的访问。
+
+
+
+
+
 1. 前言
     1.1. 手册结构
     1.2. 示例
@@ -184,4 +285,12 @@
             14.3.1.4. Issues With Undefined Behavior Sanitizer
         14.3.2. Valgrind
         14.3.3. Compute Sanitizer
+
+
+
+
+
+
+
+
 

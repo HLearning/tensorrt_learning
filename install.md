@@ -5,10 +5,11 @@
 确保您熟悉 [NVIDIA TensorRT](https://docs.nvidia.com/deeplearning/tensorrt/release-notes/index.html) 发行说明的最新功能和已知问题。
 
 有关以前发布的 TensorRT 安装文档，请参见 [TensorRT 归档](https://docs.nvidia.com/deeplearning/tensorrt/archives/index.html)。
-# 1. 概述
-NVIDIA TensorRTTM 的核心是一个 C + + 库，它促进了对 NVIDIA 图形处理单元(GPU)的高性能推断。TensorRT 接受一个经过训练的网络，该网络由一个网络定义和一组经过训练的参数组成，并生成一个高度优化的运行时引擎，该引擎执行该网络的推理。
 
-TensorRT 通过 C + + 和 Python 提供 API，帮助通过 Network Definition API 表达深度学习模型，或者通过允许 TensorRT 优化并在 NVIDIA GPU 上运行的解析器加载预定义模型。TensorRT 应用图形优化、层融合以及其他优化，同时利用多种高度优化的内核集合找到该模型的最快实现。TensorRT 还提供了一个运行时，您可以使用该运行时在从 NVIDIA KeplerTM 一代开始的所有 NVIDIA GPU 上执行该网络。
+# 1. 概述
+NVIDIA TensorRT 的核心是一个 C++ 库，它促进了对 NVIDIA 图形处理单元(GPU)的高性能推断。TensorRT 接受一个经过训练的网络，该网络由一个网络定义和一组经过训练的参数组成，并生成一个高度优化的运行时引擎，该引擎执行该网络的推理过程。
+
+TensorRT 通过 C++ 和 Python 提供 API，帮助通过 网络定义 API 表达深度学习模型，或者通过允许 TensorRT 优化并在 NVIDIA GPU 上运行的解析器加载预定义模型。TensorRT 采用图优化、层融合以及其他优化，同时利用多种高度优化的内核集合找到该模型的最快实现。TensorRT 还提供了一个运行时，您可以使用该运行时在从 NVIDIA Kepler 一代开始的所有 NVIDIA GPU 上执行该网络。
 
 TensorRT 还包括可选的 NVIDIA PascalTM、 NVIDIA VoltaTM、 NVIDIA TuringTM 和 NVIDIA Ampere Architecture 的高速混合精度功能。
 
